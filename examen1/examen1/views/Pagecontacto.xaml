@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="examen1.views.Pagecontacto">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Image x:Name="foto" WidthRequest="100" HeightRequest="150" />
+
+            <Button x:Name="btntomar" Text=" Fotografia " Clicked="btntomar_Clicked" />
+
+            
+            <Entry x:Name="nombres" Placeholder=" Ingrese su Nombre" Keyboard="Chat"/>
+           
+            <Entry x:Name="telefonos" Placeholder=" Ingrese su Numero de Telfono" Keyboard="Numeric"/>
+            
+            <Entry x:Name="Edades" Placeholder=" Ingrese su Edad" Keyboard="Numeric"/>
+            
+            
+            <Picker x:Name="paise" Title="Seleccione Su Pais">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Honduras</x:String>
+                        <x:String>Guatemala</x:String>
+                        <x:String>El Salvador</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+                </Picker>
+
+            <Label Text="Nota"/>
+            <Entry x:Name="notas" Placeholder="Escriba una nota " Keyboard="Chat"/>
+
+            <Button x:Name="btnsalvar" Text=" salvar contacto " Clicked="btnsalvar_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
